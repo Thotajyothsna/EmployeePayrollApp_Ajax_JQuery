@@ -1,0 +1,12 @@
+--DELETING RECORD BY ID
+USE Emp_Payroll;
+GO
+
+CREATE PROC DeleteById
+(
+@Id INT
+)
+AS
+BEGIN
+	DELETE Employee WHERE ID=@Id;
+END
